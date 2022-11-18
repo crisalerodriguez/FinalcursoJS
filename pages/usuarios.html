@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Usuariosregistrados</title>
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="../imagenes/logoprueba1.jpg" style="width: 75px;"><a class="navbar-brand" href="../index.html"><h1>Pc-malvinas</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+            <button class="btn text-white mb-2 mt-1" id="inicio" style="height: 46px;">
+                <span class="mat-button-wrapper">
+                <img src="../imagenes/user.png" style="width:25px; text-decoration: none;" class="fotitouser me-2"><strong style="text-decoration: none; color:rgb(10, 9, 9);"><a href="#" class="mt-2" style="text-decoration: none; color:rgb(10, 9, 9)">Usuarios Registrados</a></strong></span>
+            </button>
+
+            <button  class="btn btn-light text-white ms-2 mt-1 mb-2" style="background-color:#00ffff" style="height: 46px;">
+              <h5 id="salir" class="mt-1"><span id="cantidadCarrito" class="volvermenu mat-button-wrapper"><a href="../index.html" style="text-decoration: none; color:rgb(8, 8, 8);">Salir</h5></a></span>
+            </button>
+            
+          </div>
+        </div>
+
+    </nav>
+
+    <main>
+
+    <div class="userpadre container">
+        <h4>Top 10 de nuestros usuarios</h4>
+        <table class="table table-bordered table-striped">
+            <thead class="fila">
+                <tr>
+                    <th>ID</th>
+                    <th>Apellido y Nombre</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="datausuario" class="dataname">
+                 <!-- INFORMACION DE LA API -->
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="mt-5 mb-5 container">
+        <h4 class="d-flex justify-content-center">Registrate y obtene ofertas semanales INCREIBLES</h4>
+        <form id="formulario" class="cajapadre1 col-md-4 offset-md-4 border border-info mt-4 mb-5">
+            <div class="cajapadre2 .container-sm grid">
+                <h2 class="titlle mt-3 d-flex justify-content-center display-6 fw-bold mb-4 ms-2 me-2  bg-light">REGISTRAR:</h2> 
+                <div class="g-col-12 mt-3 mb-3 ms-4 me-4">
+                    <input id="nombre" class="form-control" aria-label="Last name"  type="text" placeholder="Ingresa tu nombre :" onkeypress="capturarEnter(event)">
+                    <!--     JS       -->
+                </div>
+
+                <div class="g-col-12 mt-3 mb-3 ms-4 me-4">
+                    <input id="email"  class="form-control" type="email" aria-label="Last name" placeholder="Ingresa tu email :">
+                    <!--     JS       -->
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto mb-2">
+                    <button class="btn btn-primary mt-5" type="submit" value="Enviar">Aceptar</button>  
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    </main>
+
+    <footer class="footerusu mt-5 border border-secondary">
+        <div class="marcaspadre container-fluid col-12 mt-4">
+            <div class="marcas-track">
+
+              <div class="marcas ms-4 mt-1">
+                  <img src="../imagenes/marcas/adata-logo.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/Aerocool_logo.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/aorus-gigabyte.png" alt="">
+              </div>
+              <div class="marcas me-4 mb-1">
+                  <img src="../imagenes/marcas/asus.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/coolermasterlogo.jpg" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/corsair.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/evga.jpg" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/hyperx.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/intel.jpg" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/logitechG.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/redragon.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/razer.png" alt="">
+              </div>
+              <div class="marcas me-4">
+                  <img src="../imagenes/marcas/ryzen.png" alt="">
+              </div>
+      
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script url="https://jsonplaceholder.typicode.com/users"></script>
+    <script src="../js/registro.js"></script>
+</body>
+</html>

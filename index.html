@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- SWEETALERT -->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="../imagenes/logoprueba1.jpg" style="width: 75px;"><a class="navbar-brand" href="./index.html"><h1>Pc-malvinas</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <form class="d-flex me-3 mb-2 mt-2">
+                    <input class="form-control me-2 border border-secondary" style="width: 300px" type="search" placeholder="Buscar" aria-label="Search">   
+                </form>
+    
+                <button id="inicio" class="btn text-white mb-2 mt-1" style="height: 46px;">
+                    <span class="mat-button-wrapper">
+                    <img src="../imagenes/user.png" style="width:25px; text-decoration: none;" class="fotitouser me-2"><strong style="text-decoration: none; color:rgb(10, 9, 9);"><a href="./pages/usuarios.html" class="mt-2" style="text-decoration: none; color:rgb(10, 9, 9)">Ver usuarios registrados</a></strong></span>
+                </button>
+
+                <button id="botonCarrito" class="btn btn-light text-white ms-2" style="background-color:rgb(236, 227, 227)">
+                  <h5 id="verCarrito"><span id="cantidadCarrito" class="carroCantidad mat-button-wrapper"></span>Carrito<a href="#" style="text-decoration: none; color:rgb(236, 230, 230);"><img src="./imagenes/carrito1.png" style="width:25px; text-decoration: none;" class="me-2 mt-2"></h5></a></span>
+                </button>
+                
+              </div>
+            </div>
+    
+        </nav>
+    
+        <section>
+    
+            <article class="mb-3">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./imagenes/img1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/img2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/img3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </article>
+
+            <div class="container">
+                <div class="row">
+                    <div id="fila_prueba" class="" style="background-color:rgb(176, 184, 182)">
+                        <div>
+                            <h1 class="text-center">Productos Disponibles</h1>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div id="tarjetasProduct" class="row d-flex justify-content-around">
+                                <!--- Aqui los productos ---> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                <div id="modalContainer" class="ventanacarrito">
+                    <!--- Carrito --->
+                </div>
+                
+        </section>
+    
+        <footer class="mt-5 border border-secondary">
+            <div class="marcaspadre container-fluid col-12 mt-4">
+                <div class="marcas-track">
+    
+                  <div class="marcas ms-4 mt-1">
+                      <img src="./imagenes/marcas/adata-logo.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/Aerocool_logo.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/aorus-gigabyte.png" alt="">
+                  </div>
+                  <div class="marcas me-4 mb-1">
+                      <img src="./imagenes/marcas/asus.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/coolermasterlogo.jpg" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/corsair.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/evga.jpg" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/hyperx.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/intel.jpg" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/logitechG.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/redragon.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/razer.png" alt="">
+                  </div>
+                  <div class="marcas me-4">
+                      <img src="./imagenes/marcas/ryzen.png" alt="">
+                  </div>
+          
+                </div>
+            </div>
+        </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/productos.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/logica.js"></script>
+    
+</body>
+</html>
